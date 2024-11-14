@@ -1,8 +1,11 @@
 # Azure OpenAI Worker
 
-A Cloudflare Worker that proxies OpenAI API requests to Azure OpenAI API, with automatic API version synchronization.
+A Cloudflare Worker that proxies OpenAI API requests to Azure OpenAI API.
+
+Supported api version: `2024-10-21`, see [Azure OpenAI API Reference](https://github.com/Azure/azure-rest-api-specs/tree/533d972b32b91774f13e5b56190ab6573760ee85/specification/cognitiveservices/data-plane/AzureOpenAI/inference#azureopenai-2024-10-21)
 
 > Why not use OpenAI js SDK?
+>
 > I'm stupid :D
 > 
 > I need to share my Azure OpenAI API key with others and monitor the usage, but I don't want to expose my API key to the public.
