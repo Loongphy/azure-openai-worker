@@ -1,0 +1,31 @@
+name = "azure-openai-worker"
+main = "src/index.ts"
+compatibility_date = "2024-04-01"
+
+# compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+AZURE_API_KEY = ""
+AZURE_ENDPOINT = ""
+AZURE_DEPLOYMENT_ID = ""
+AZURE_API_VERSION = "2024-10-21"
+
+[[kv_namespaces]]
+binding = "AZURE_OPENAI_API_KEYS"
+id = "abcd1234abcd1234abcd1234abcd1234"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
